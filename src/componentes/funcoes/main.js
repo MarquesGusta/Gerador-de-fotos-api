@@ -45,6 +45,7 @@ export default function Main(){
                 this.GenerateHTML(data.photos)
                 console.log(data) 
             }
+            // aqui temos a função que checa se temos autorização (no caso a chave da api) para utilizar a api / caso não houvesse não teria resultado
             async fetchImages(baseURL){
                 const response = await fetch(baseURL,{
                     method: 'GET',
